@@ -22,11 +22,13 @@ require ('./routes/authRoutes') (app);
 const PORT = process.env.PORT || 5000;
 app.listen (PORT);
 
-//http://localhost:5000/auth/google/callback
 //git repo
 //https://git.heroku.com/rocky-beyond-10909.git
 
-//https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fauth%2Fgoogle%2Fcallback&scope=profile%20email&client_id=633284633372-f9s1gplpoht7la7sg3ld25mb6ea294uk.apps.googleusercontent.com
 
-//A7gSOi9HTrqwrzgA
-//mongodb+srv://omar:<password>@quarantinebuddy-as1lc.mongodb.net/test?retryWrites=true&w=majority
+//ExweX8IWrquAiPKL
+//mongodb+srv://omar:ExweX8IWrquAiPKL@quarantinebuddy-mhnn9.mongodb.net/test?retryWrites=true&w=majority
+
+
+//id: 964933078698-a9d2g4e17ns8o34rm0eavd8f0qqdubpi.apps.googleusercontent.com
+//secret : 2YcqyEOjbWliUYUwM9YT6X_G
