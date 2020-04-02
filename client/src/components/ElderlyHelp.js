@@ -43,7 +43,7 @@ class ElderlyHelp extends Component {
     }
   }
   async submitPost () {
-    console.log(this.props.auth.name)
+    console.log(this.props.auth)
     const elem = document.getElementById ('select');
     const loc = elem.options[elem.selectedIndex].value;
     const t = document.getElementById ('textarea1').value;
