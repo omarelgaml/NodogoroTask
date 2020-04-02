@@ -9,7 +9,7 @@ const bodyParser = require ('body-parser');
 
 
 require ('./models/User');
-require ('./models/ElderlyRequest');
+require ('./models/Elderly');
 require ('./models/EmployeeRequest');
 require ('./models/OfferRequest');
 
