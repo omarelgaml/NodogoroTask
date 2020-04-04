@@ -11,6 +11,7 @@ import Rodal from 'rodal';
 import {NotificationContainer,NotificationManager} from 'react-notifications';
 import image1 from '../image1.jpg'
 import image2 from '../image222.jpg'
+import image3 from '../image3.jpeg'
 
 import * as actions from '../actions';
 
@@ -149,7 +150,7 @@ class Landing extends Component {
             </Slide>
             <Slide
               image={
-                <img alt="img" src="https://lorempixel.com/580/250/nature/4" />
+                <img alt="img" src={image3} />
               }
             >
               <Caption placement="right">
