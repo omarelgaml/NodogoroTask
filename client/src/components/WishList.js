@@ -6,7 +6,6 @@ import Card from './Card';
 import {Button} from 'react-materialize';
 
 class WishList extends Component {
-    
   constructor (props) {
     super (props);
     this.state = {
@@ -16,13 +15,12 @@ class WishList extends Component {
 
   async componentDidMount () {
     const res = await axios.post ('/api/getWishes', {
-      id: localStorage.getItem("id"),
+      id: localStorage.getItem ('id'),
     });
     this.setState ({
       posts: res.data,
-    });      
+    });
   }
-
 
   renderPosts () {
     if (this.props.auth) {
@@ -42,7 +40,8 @@ class WishList extends Component {
             postID={item._id}
             userID={id}
             wish={true}
-            delete={()=> axios.delete('/api/deleteWish',{data:{id:item._id}})}
+            delete={() =>
+              axios.delete ('/api/deleteWish', {data: {id: item._id}})}
             postOwner={item.userID}
           >
             Test
@@ -76,8 +75,12 @@ class WishList extends Component {
 
           <div className="row">
             <div className="input-field col s10 offset-s1">
-              <textarea id="textarea1" className="materialize-textarea " />
-              <label>New Post</label>
+              <textarea
+                id="textarea1"
+                className="materialize-textarea "
+                placeholder="What do you want to do after the quarantine? (This is a private tab)"
+              />
+              <label></label>
             </div>
 
           </div>
