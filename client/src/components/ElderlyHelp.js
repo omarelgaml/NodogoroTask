@@ -152,7 +152,11 @@ class ElderlyHelp extends Component {
       }
     }
     if (currentPage === 'employee') {
-      if (this.props.auth && this.props.auth.type === 'elderly') {
+      if (
+        this.props.auth &&
+        (this.props.auth.type === 'elderly' ||
+          this.props.auth.type === 'volunteer')
+      ) {
         return false;
       } else {
         return true;

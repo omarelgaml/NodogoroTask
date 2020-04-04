@@ -111,29 +111,27 @@ class Request extends Component {
 
           </form>}
         {this.state.permission &&
-          <button
-            className="btn right waves-effect waves-light red custom-btn"
+          <Button
+            className="right custom-btn"
             type="submit"
             name="action"
             onClick={() => this.props.submitPost ()}
           >
             Submit
             <i className="material-icons right">send</i>
-          </button>}
+          </Button>}
         <div>
 
           <div className="row" style={{marginTop: '120px'}}>
             <div className="col s3 offset-s1  ">
               {this.state.permission &&
                 <Button
-                  node="button"
-                  waves="light"
                   type="submit"
                   name="action"
                   id="filter-btn"
                   onClick={() => this.props.yourPosts ()}
                 >
-                  button
+                  Your posts
                 </Button>}
 
             </div>

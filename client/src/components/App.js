@@ -23,7 +23,7 @@ class App extends Component {
             <Route
               exact
               path="/"
-              component={this.props.auth ? Home : Landing}
+              component={Landing}
             />
             <Route exact path="/home" component={Home} />
             <Route exact path="/elderly" component={Elderly} />

@@ -68,7 +68,7 @@ class Home extends Component {
                   <FormControlLabel
                     value="elderly"
                     control={<Radio />}
-                    label="Above 60"
+                    label="Above 60 years old"
                   />
                   <FormControlLabel
                     value="employee"

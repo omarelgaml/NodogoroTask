@@ -13,13 +13,13 @@ module.exports = app => {
     var transporter = nodemailer.createTransport ({
       service: 'gmail',
       auth: {
-        user: 'quarantinebuddy20@gmail.com',
-        pass: '#a123456',
+        user: keys.email,
+        pass: keys.password,
       },
     });
 
     var mailOptions = {
-      from: 'quarantinebuddy20@gmail.com',
+      from: keys.email,
       to: writerEmail,
       subject: req.body.userName +
         ' has replied to your post on quarantine buddy',

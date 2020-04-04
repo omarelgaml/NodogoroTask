@@ -35,7 +35,7 @@ class Header extends Component {
 
         <nav className="black" style={{padding: '0px 5px'}}>
           <div className="nav-wrapper">
-            <Link to={this.props.auth ? 'home' : '/'} className="brand-logo">
+            <Link to={'/'} className="brand-logo">
               Quarantine Buddy
             </Link>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger">

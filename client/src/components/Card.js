@@ -4,11 +4,8 @@ import axios from 'axios';
 import {Button} from 'react-materialize';
 import '../App.css';
 
-
 class Card extends Component {
-  async deletePost(post){
-
-
+  async deletePost (post) {
     const page = window.location.pathname.split ('/');
     if (page[page.length - 1] === 'elderly') {
       var route = '/api/deletePost';
@@ -22,10 +19,10 @@ class Card extends Component {
     if (page[page.length - 1] === 'wishlist') {
       var route = '/api/deleteWish';
     }
-    const data = {data:{id:post}}
-    const res = await axios.delete(route,data);
-    console.log(res);
-    window.location.reload(false);
+    const data = {data: {id: post}};
+    const res = await axios.delete (route, data);
+    console.log (res);
+    window.location.reload (false);
   }
   render () {
     return (
@@ -39,13 +36,28 @@ class Card extends Component {
               <p>{this.props.text}</p>
             </div>
             <div className="card-action">
-              { this.props.userID===this.props.postOwner || this.props.wish ?
-              <Button className="right" onClick={()=>this.deletePost(this.props.postID)}>Delete</Button>
-              :
-              <a className="right" onClick={this.props.sendEmail}>Contcat</a>
-
-              }
-              <a className="left">{this.props.date}</a>
+              {this.props.userID === this.props.postOwner || this.props.wish
+                ? <Button
+                    className="right"
+                    onClick={() => this.deletePost (this.props.postID)}
+                  >
+                    Delete
+                  </Button>
+                : <a className="right" onClick={this.props.sendEmail}>
+                    Contcat
+                  </a>}
+              <a className="left">
+                {
+                  new Date (this.props.date).getDay ()
+                  +
+                  '/'
+                  +
+                  parseInt (
+                  new Date (this.props.date).getMonth ()) +
+                  1 +
+                  '/' +
+                  new Date (this.props.date).getFullYear ()}
+              </a>
 
             </div>
           </div>
