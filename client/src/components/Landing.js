@@ -101,7 +101,7 @@ class Landing extends Component {
             <div>
               <a
                 onClick={() => this.updateUser ()}
-                class="waves-effect waves-light btn right send-type"
+                className="waves-effect waves-light btn right"
               >
                 Send
               </a>
