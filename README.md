@@ -7,7 +7,7 @@ a place where an elderly person can post a request asking for help mentioning hi
 for an employee who has lost his/her job and needs a help. A volunteer can also post an offer request (that he/she has
 extra products for example). All the requests are shared between all the members and divided on 3 tabes (elderly help,
 employees help and offering help). The user can mention if he/she wants to mention his/her name of not. The user who wants
-to respond to a request will be asked to write his/here response and will be sent be the webite to the request writer 
+to respond to a request will be asked to write his/here response and will be sent by the webite to the request writer 
 via email.
 
 -There is private tab called wishlist where the user can write the things that he/she wants to make after the quarantine.
